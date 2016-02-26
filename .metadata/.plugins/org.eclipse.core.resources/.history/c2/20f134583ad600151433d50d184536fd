@@ -1,0 +1,57 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+
+public class gestion_empleados/*classe principal del ejercicio*/
+{
+public static void main (String[] args)//funcion principal del programa
+{
+	
+	try{
+	
+		InputStreamReader isr=new  InputStreamReader(System.in);
+		BufferedReader br=new BufferedReader (isr);
+	/***************************************************/	
+	
+		int N;
+		do{
+		System.out.print("Numero de empleados:");
+		N=Integer.parseInt(br.readLine());
+		}while(N<2);
+		
+		
+		
+		int []nombre=new int[N];
+		
+		int []edades=new int[N];
+		
+		int []sueldo=new int[N];
+		
+		
+		for(int i=0;i<N;i++)  //repetir N veces
+		{
+			
+			
+			System.out.print("Nombre empleado : ");
+		nombre[i]=Integer.parseInt(br.readLine());
+		
+		System.out.print("Edad empleado : ");
+		edades[i]=Integer.parseInt(br.readLine());
+		
+		System.out.print("Sueldo empleado : ");
+		sueldo[i]=Integer.parseInt(br.readLine());
+		
+		}
+		
+		
+	/*	do{
+		
+		System.out.println("0.-Salir");
+		System.out.println("1.-Visualizar datos");
+		
+		}while (op!=0);*/
+	/**************************************************************/
+		
+	}catch(Exception e){}
+}// final de main
+}// final de class
